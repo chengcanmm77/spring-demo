@@ -8,5 +8,16 @@
         <!-- collaborators and configuration for this bean go here -->
     </bean>
     <!-- more bean definitions go here -->
+    
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+    	<property name="basenames">
+    		<list>
+    			<value>format</value>
+    		</list>
+    	</property>
+    </bean>
+    
+    <bean id="blackNotifier" class="com.bucket.spring.aop.BlackListNotifier" />
+    <bean id="testEvent" class="com.bucket.spring.aop.TestEvent"></bean>
 
 </beans>
