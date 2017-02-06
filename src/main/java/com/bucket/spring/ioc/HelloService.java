@@ -1,7 +1,8 @@
-package com.bucket.spring.aop;
+package com.bucket.spring.ioc;
 
 public interface HelloService {
+
     public void sayHello();
 
-    public void dd();
+    public void insert();
 }
