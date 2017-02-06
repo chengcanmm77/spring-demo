@@ -1,8 +1,7 @@
 package com.bucket.spring.aop;
 
-public class HelloService {
+public interface HelloService {
+    public void sayHello();
 
-	public void sayHello() {
-		System.out.println("sayHello.....");
-	}
+    public void dd();
 }
